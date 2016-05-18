@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <include layout="@layout/actvity_home_imagebtn_item"></include>
+            <include layout="@layout/actvity_home_imagebtn_item"></include>
+            <include layout="@layout/actvity_home_imagebtn_item"></include>
+            <include layout="@layout/actvity_home_imagebtn_item"></include>
+        </TableRow>
+        <TableRow>
+            <include layout="@layout/actvity_home_imagebtn_item"></include>
+            <include layout="@layout/actvity_home_imagebtn_item"></include>
+            <include layout="@layout/actvity_home_imagebtn_item"></include>
+            <include layout="@layout/actvity_home_imagebtn_item"></include>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

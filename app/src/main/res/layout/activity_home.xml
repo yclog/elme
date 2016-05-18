@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp">
+
+        <include layout="@layout/titlebar_setting"></include>
+
+        <include layout="@layout/titlebar_home_content"
+            android:id="@+id/include2"></include>
+
+        <ScrollView
+            android:layout_below="@+id/include2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scorllview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/search"
+                    android:id="@+id/searchView" />
+
+                <include layout="@layout/activity_home_imageview_viewpage"></include>
+
+                <include layout="@layout/actvity_home_imagebtn"></include>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@drawable/grey"></View>
+
+                <include layout="@layout/activity_home_news"></include>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@drawable/grey"></View>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="附近商家"
+                        android:textSize="15sp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#ff9e9e9e"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffeeeeee"></View>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/hugh"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_home"
+        android:id="@+id/bottom_home"></include>
+
+</FrameLayout>

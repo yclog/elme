@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPrimary"/>
+
+    <com.example.boy.kfc.view.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/hugh"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/view" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/activity_item_avatar_back"
+        android:layout_alignBottom="@+id/view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/imageView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nick"
+        android:textSize="20sp"
+        android:textColor="@color/textColorPrimary"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/view"
+        android:layout_toRightOf="@+id/view"
+        android:layout_toEndOf="@+id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123*******789"
+        android:textSize="15sp"
+        android:textColor="@color/textColorPrimary"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>
