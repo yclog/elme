@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -38,10 +39,7 @@
                    android:layout_height="wrap_content"
                    android:orientation="horizontal">
 
-                   <ImageView
-                   android:layout_width="50dp"
-                   android:layout_height="50dp"
-                   android:src="@mipmap/item_one"/>
+                   <include layout="@layout/item_one"></include>
 
                    <TextView
                        android:layout_width="match_parent"
@@ -63,10 +61,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@mipmap/item_two"/>
+                    <include layout="@layout/item_two"></include>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -88,10 +83,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@mipmap/item_three"/>
+                    <include layout="@layout/item_three"></include>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -113,10 +105,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@mipmap/item_four"/>
+                    <include layout="@layout/item_four"></include>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -138,10 +127,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@mipmap/item_five"/>
+                    <include layout="@layout/item_five"></include>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -163,10 +149,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@mipmap/item_six"/>
+                    <include layout="@layout/item_six"></include>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -188,10 +171,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@mipmap/item_seven"/>
+                    <include layout="@layout/item_seven"></include>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -213,10 +193,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@mipmap/item_eight"/>
+                    <include layout="@layout/item_eight"></include>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -238,10 +215,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@mipmap/item_nine"/>
+                    <include layout="@layout/item_nine"></include>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -262,8 +236,15 @@
 
         </ScrollView>
 
+        <fragment
+            android:id="@+id/menu_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="com.example.boy.kfc.fragment.Bottom_Menu_Fragment"
+            tools:layout="@layout/bottom_menu"></fragment>
+
     </RelativeLayout>
 
-    <include layout="@layout/bottom_me"></include>
+
 
 </FrameLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -87,7 +88,11 @@
 
     </RelativeLayout>
 
-    <include layout="@layout/bottom_home"
-        android:id="@+id/bottom_home"></include>
+    <fragment
+        android:id="@+id/menu_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.example.boy.kfc.fragment.Bottom_Menu_Fragment"
+        tools:layout="@layout/bottom_menu"></fragment>
 
 </FrameLayout>
