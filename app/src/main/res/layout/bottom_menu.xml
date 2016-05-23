@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#f7f7f7"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/bottom_menu" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/bottom_one_clic"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_menu_one" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/bottom_two"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="110dp"
+            android:id="@+id/bottom_menu_two"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/bottom_three"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="205dp"
+            android:id="@+id/bottom_menu_three"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/bottom_four"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="295dp"
+            android:id="@+id/bottom_menu_four"/>
+
+</RelativeLayout>
